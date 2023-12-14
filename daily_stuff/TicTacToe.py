@@ -1,5 +1,5 @@
 #keyboardInterrupt genauer anschauen
-
+import random 
 print("Tic-Tac-Toe Python Tutorial")
 spiel_aktiv = True
 spieler_aktuell = 'X'
@@ -87,8 +87,23 @@ spielfeld_ausgeben()
 #Hauptschleife
 while spiel_aktiv:
     #Eingabe des aktiven Spielers
+    print()
     print("Spieler" + spieler_aktuell + "am Zug")
-    spielzug = spieler_eingabe()
+
+    #aus der Liste spielfeld alle x und o und leere Feldern entfernen
+    spielfeld_KI =[]
+    for moegliche_felder in spielfeld:
+        if moegliche_felder != 'X' and moegliche_felder != 'O' and moegliche_felder != ' ':
+            spielfeld_KI += moegliche_felder
+    #print(spielfeld_KI)
+    #print()
+    #print(random.choice(spielfeld_KI)  
+
+    #Wenn computergegenr am zug ist, ein freies zufälliges feld belegen
+    if spieler_aktuell == 'O':
+        spielzug = int(random.choice(spielfeld_KI))     
+    else:
+        spielzug = spieler_eingabe()
     if spielzug:
         #spielfeld[spielzug] = 'X'
         spielfeld[spielzug] = spieler_aktuell
