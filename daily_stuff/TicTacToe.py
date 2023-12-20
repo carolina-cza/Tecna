@@ -43,7 +43,7 @@ def spieler_eingabe():
 def spieler_wechseln():
     global spieler_aktuell
     if spieler_aktuell == 'X':
-        spieler_aktuell ='O'
+        spieler_aktuell ='O-KI'
     else:
         spieler_aktuell = 'X'
 #Kontrolle, ob ein Spieler gewonnen hat
@@ -88,7 +88,7 @@ spielfeld_ausgeben()
 while spiel_aktiv:
     #Eingabe des aktiven Spielers
     print()
-    print("Spieler" + spieler_aktuell + "am Zug")
+    print("Spieler " + spieler_aktuell + " am Zug")
 
     #aus der Liste spielfeld alle x und o und leere Feldern entfernen
     spielfeld_KI =[]
