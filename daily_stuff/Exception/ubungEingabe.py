@@ -14,8 +14,7 @@ for id in range(3):
             id = int(id)
         except ValueError:
             print("Invalid input. Only numbers are allowed.") #error meldung wenn was anderes als zahlen eingegebn werden
-        # except ValueError:
-        #     print("Mininum lenght is four. ")
+        
         
         
 
