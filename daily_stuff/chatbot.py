@@ -5,11 +5,13 @@ zufallsantworten = ["Oh, wirklich", "Interessant ...", "Das kann man so sehen","
 
 reaktionsantworten = {"hallo": "aber Hallo",
                       "geht": "Was verstehst du darunter?",
-                      "essen": "Ich habe leider keinen Geschmacksinn :("
+                      "essen": "Ich habe leider keinen Geschmacksinn :(",
+                      "sport": "Sport ist Mord",
+                      "zombiez": "Es ist eine HorrorRap Gruppe aus Berlin"
                       }
 print("Willkommen beim Chatbot")
 print("Worüber würden Sie gerne Heute sprechen?")
-print("Zumbeenden einfach 'bye' eintippen")
+print("Zum beenden einfach 'bye' eintippen")
 print("")
 
 nutzereingabe = ""
