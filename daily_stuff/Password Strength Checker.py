@@ -10,14 +10,14 @@ def check_password_strength():
     for char in list(password):
         if char in string.ascii_lowercase:
             lower_count += 1
-        elif char in string.ascii_lowercase:
+        elif char in string.ascii_uppercase:
             upper_count += 1
         elif char in string.digits:
             num_count += 1
         elif char == ' ':
             wspace_count += 1
-        elif char == ' ':
-            wspace_count += 1
+        # elif char == ' ':
+        #     wspace_count += 1
         else: 
             special_count += 1
 
@@ -35,9 +35,9 @@ def check_password_strength():
     if strength == 1:
         remarks = ("That is a very bad password. Change it.") 
     elif strength == 2:
-        remarks = ("that  is a weak password.")
+        remarks = ("That is a weak password.")
     elif strength == 3:
-        remarks = "Your password is okay, but it can be improved."
+        remarks = ("Your password is okay, but it can be improved.")
     elif strength == 4:
         remarks = ("Your password is good.")
     elif strength == 5:
@@ -48,28 +48,29 @@ def check_password_strength():
     print(f"{upper_count} uppercase letters")
     print(f'{num_count} digits')
     print(f'{wspace_count} whitespaces')
-    print(f" {special_count} special characters")
+    print(f"{special_count} special characters")
     print(f"Password Score: {strength /5}")
-    print(f'remarks: {remarks}')
+    print(f'Remarks: {remarks}')
 
 def check_pwd(another_pw= False):
     valid = False
     if another_pw:
-        choice = input("DO you want to check another password strenght (y/n) :")
+        choice = input("Do you want to check another password strenght (yes/no) :")
     else:
-        choice = input("Do you want to check your password strenght (y/n) :")
+        choice = input("Do you want to check your password strenght (yes/no) :")
     
     while not valid:
-        if choice.lower() == "y":
+        if choice.lower() == "yes":
             return True
-        elif choice.lower() == "n":
+        elif choice.lower() == "no":
             print("Exiting...")
             return False
         else:
             print("Invalid input... please try again. \n")
+            break
     
 if __name__ == '__main__':
-    print("==== Wlcome to Password Strenght Checker ====")
+    print("==== Welcome to Password Strenght Checker ====")
     check_pw = check_pwd()
     while check_pw:
         check_password_strength()
