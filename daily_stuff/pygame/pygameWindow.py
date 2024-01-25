@@ -1,6 +1,7 @@
 import pygame
 
 pygame.init()
+
 #define the background colour, using RGB color coding
 background_colour = (255,51,255)
 
