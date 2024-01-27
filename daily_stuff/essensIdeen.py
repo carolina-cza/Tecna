@@ -1,7 +1,7 @@
 import random
 
 #define lists with meals
-healthy = ["appel cinamon oats", "Banana pancakes","Chilaquiles Rojos"]
+healthy = ["appel cinnamon oats", "Banana pancakes","Chilaquiles Rojos"]
 
 unhealthy = ["pommes fires with nuggets", "Hamburger","Kochkässchnitzel"]
 
@@ -30,10 +30,20 @@ if frage == "snack":
 ask = input("Do you want the recipe? yes/no ")
 
 if ask == "yes":
-   if select_healthy == "appel cinamon oats":
-      print(" Recipe: 1 apple, 1/2 cup oats, 1tsp cinamon")
+   if select_healthy == "appel cinnamon oats":
+      print("""Ingredients:
+                1 cup water or milk
+                ½ Tablespoon maple syrup, brown sugar or coconut sugar (optional)
+                ¼-½ teaspoon ground cinnamon
+                ½ teaspoon vanilla extract
+                pinch of sea salt
+                2 Tablespoons chopped pecans, for topping
+               CINNAMON APPLES
+                ½ cup diced apples
+                2 teaspoons maple syrup
+                ¼ teaspoon cinnamon""")
    if select_healthy == "Banana pancakes":
-      print("Recipe: 1 bannana mash, 1 cup oats, 1 egg, 1tsp milk")
+      print("Recipe: 1 bannana mash, 1 cup oats, 1 egg, 1tsp milk, 1tsp baking powder")
    if select_healthy == "Chilaquiles Rojos":
       print("Ask google pls")
       
