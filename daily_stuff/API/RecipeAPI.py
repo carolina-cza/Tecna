@@ -7,7 +7,7 @@ response = requests.get ('https://www.themealdb.com/api/json/v1/1/random.php')
 #print(response) 
 
 #print the hole list
-print(response.json())
+#print(response.json())
 
 meals = response.json()['meals'] [0]
 #print('meals')
