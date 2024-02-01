@@ -44,6 +44,8 @@ while True:
             #unicode standard is used for string formation
             else:
                 user_text += event.unicode
+                #if text_surface.get_width() > input_rect.w -400:
+                   # user_text = user_text[:-1]
     
     display.fill((255,255, 255))
 
@@ -58,7 +60,7 @@ while True:
     text_surface = base_font.render(user_text, True, (255,255,255))
 
     #render at position stated in arguments
-    display.blit(text_surface,(input_rect.x+5, input_rect.y+5))
+    display.blit(text_surface,(input_rect.x+5, input_rect.y+10))
 
     #set width of textfield so that text cannot get outside of users text input
     input_rect.w = max(100,text_surface.get_width()+10)
