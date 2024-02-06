@@ -61,8 +61,8 @@ class Button():
 def myFunction():
     print('Button Pressed')
 
-Button(30, 30, 400, 100, 'Button One (onePress)', myFunction)
-Button(30,140,400,100,'Button Two (multiPress)', myFunction, True)
+Button(90, 30, 400, 100, 'Button One (onePress)', myFunction)
+Button(90,140,400,100,'Button Two (multiPress)', myFunction, True)
 
 while True:
     screen.fill((20, 20, 20))
