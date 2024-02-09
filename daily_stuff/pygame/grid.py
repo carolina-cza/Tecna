@@ -1,7 +1,7 @@
 import pygame
 
 pygame.init()
-window = pygame.display.set_mode((250,250))
+window = pygame.display.set_mode((400,450))
 
 #def colors
 black = (0,0,0)
@@ -56,7 +56,7 @@ while not done:
                              [(margin + width)* column + margin,
                                (margin + height)* row + margin,
                                width,
-                               height])
+                               height])  
 
     clock.tick(60)
 
