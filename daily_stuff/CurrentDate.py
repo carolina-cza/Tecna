@@ -4,6 +4,7 @@ print(currentDay)
 
 #daycounter till an special date based on the current date
 dc =  datetime.datetime (currentDay.year,12, 24) - datetime.datetime.now()
+cc =  datetime.datetime (currentDay.year,3, 20) - datetime.datetime.now()
 
 #überprüft ob heute Nikolaus ist
 if currentDay.month == 12 and currentDay.day == 6:
@@ -22,3 +23,5 @@ if currentDay.month == 1 and currentDay.day == 6:
 
 if currentDay.month == 3 and currentDay.day == 20:
     print("Happy Birthday!")
+else:  
+    print("not yet:( is still " + str(cc) + " till your Birthday")
